@@ -225,7 +225,7 @@ function Hero() {
 
           <div className="mt-10 grid max-w-md grid-cols-3 gap-6 border-t border-white/10 pt-6">
             {[
-              { k: "10+", v: "Projects" },
+              { k: "3+", v: "Projects" },
               { k: "2+", v: "Years coding" },
               { k: "∞", v: "Curiosity" },
             ].map((s) => (
