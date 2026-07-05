@@ -172,7 +172,7 @@ function Hero() {
           </div>
 
           <h1 className="mt-6 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            Hi, I'm <span className="text-gradient animate-gradient bg-clip-text">Saurav Kumar</span>
+            Hi, I'm <span className="text-gradient animate-gradient bg-clip-text">Saurav</span>
             <br />
             <span className="text-muted-foreground">building intelligent</span>
             <br />
