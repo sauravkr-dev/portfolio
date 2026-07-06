@@ -520,7 +520,7 @@ function Contact() {
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=sauravkr.dev@gmail.com"
+            href="mailto:sauravkr.dev@gmail.com"
             target="_blank"
             rel="noreferrer"
             className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-6 py-3 text-sm font-semibold text-white"
