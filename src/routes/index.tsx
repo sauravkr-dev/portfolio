@@ -48,6 +48,7 @@ const projects = [
   "PyGame",
 ],
     href: "https://github.com/sauravkr-dev/Personal-AI-Voice-assistant",
+    live: "https://saurav-nova.netlify.app/",
   },
   {
   title: "Number Guessing Game",
@@ -61,27 +62,6 @@ const projects = [
   ],
   href: "https://github.com/sauravkr-dev/Guessing-Game",
 }
-  // {
-  //   title: "Algo Visuali zer",
-  //   tag: "DSA",
-  //   desc: "Interactive playground to visualize sorting, graph traversal and pathfinding algorithms in real time.",
-  //   stack: ["Python", "PyGame", "DSA"],
-  //   href: "#",
-  // },
-  // {
-  //   title: "Smart Notes AI",
-  //   tag: "AI",
-  //   desc: "AI-powered note summarizer & Q&A tool for students, with instant flashcards.",
-  //   stack: ["Python", "LangChain", "Streamlit"],
-  //   href: "#",
-  // },
-  // {
-  //   title: "CodeMate CLI",
-  //   tag: "Tooling",
-  //   desc: "Terminal companion that explains code, suggests fixes and generates snippets on the fly.",
-  //   stack: ["Python", "Typer", "OpenAI"],
-  //   href: "#",
-  // },
 ];
 
 function Nav() {
@@ -449,12 +429,27 @@ function Projects() {
                   ))}
                 </div>
 
-                <a
-                  href={p.href}
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[oklch(0.8_0.15_270)] transition-colors hover:text-white"
-                >
-                  View on GitHub <ExternalLink className="h-3.5 w-3.5" />
-                </a>
+                <div className="mt-6 flex items-center gap-5">
+                  <a
+                    href={p.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[oklch(0.8_0.15_270)] transition-colors hover:text-white"
+                  >
+                    View on GitHub <Github className="h-3.5 w-3.5" />
+                  </a>
+
+                  {p.live && (
+                    <a
+                      href={p.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-[oklch(0.8_0.15_270)] transition-colors hover:text-white"
+                    >
+                      Live Demo <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  )}
+                </div>
               </div>
             </article>
           ))}
@@ -576,10 +571,10 @@ function Footer() {
           </span>
         </div>
         <div className="flex shrink-0 items-center gap-2">
-          <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub" className="glass grid h-9 w-9 place-items-center rounded-full hover:text-[oklch(0.75_0.2_240)]">
+          <a href="https://github.com/sauravkr-dev" target="_blank" rel="noreferrer" aria-label="GitHub" className="glass grid h-9 w-9 place-items-center rounded-full hover:text-[oklch(0.75_0.2_240)]">
             <Github className="h-4 w-4" />
           </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="glass grid h-9 w-9 place-items-center rounded-full hover:text-[oklch(0.75_0.22_300)]">
+          <a href="https://www.linkedin.com/in/sauravkr-dev" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="glass grid h-9 w-9 place-items-center rounded-full hover:text-[oklch(0.75_0.22_300)]">
             <Linkedin className="h-4 w-4" />
           </a>
         </div>
