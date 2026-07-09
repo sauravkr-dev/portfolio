@@ -314,8 +314,8 @@ function About() {
             <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
               {[
                 { icon: GraduationCap, label: "B.Tech · CSE" },
-                { icon: MapPin, label: "India · Remote" },
-                { icon: Sparkles, label: "AI / Python Dev" },
+                { icon: MapPin, label: "Delhi-NCR · Hybrid/Remote" },
+                { icon: Sparkles, label: "AI & Software Engineer" },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-2 rounded-xl border border-white/5 bg-white/5 p-3 text-sm">
                   <Icon className="h-4 w-4 text-[oklch(0.75_0.2_270)]" /> {label}
