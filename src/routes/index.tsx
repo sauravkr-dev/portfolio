@@ -19,6 +19,7 @@ import {
   FileText,
   MapPin,
   GraduationCap,
+  Trophy,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -50,6 +51,21 @@ const projects = [
     href: "https://github.com/sauravkr-dev/Personal-AI-Voice-assistant",
     live: "https://saurav-nova.netlify.app/",
   },
+    {
+    title: "GearLoop",
+    tag: "Hackathon Project",
+    featured: false,
+    desc: "A sports equipment-sharing platform developed with Team ByteForce to help users discover, share, and borrow sports equipment within their community. Secured 3rd place at HackSprint, GTBIT.",
+    stack: [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite",
+      "TanStack Router",
+    ],
+    href: "https://github.com/sauravkr-dev/Gear-Loop-website",
+    live: "https://gear-loop-website.vercel.app/",
+  },
   {
   title: "Number Guessing Game",
   tag: "Python",
@@ -76,6 +92,7 @@ function Nav() {
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
+    { href: "#achievements", label: "Achievements" },
     { href: "#resume", label: "Resume" },
     { href: "#contact", label: "Contact" },
   ];
@@ -183,7 +200,7 @@ function Hero() {
             </a>
             <div className="flex items-center gap-2">
               <a
-                href="https://github.com/"
+                href="https://github.com/sauravkr-dev"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"
@@ -192,7 +209,7 @@ function Hero() {
                 <Github className="h-4 w-4" />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://linkedin.com/in/sauravkr-dev"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
@@ -459,6 +476,64 @@ function Projects() {
   );
 }
 
+
+function Achievements() {
+  return (
+    <section id="achievements" className="relative py-28">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <SectionHeading
+          eyebrow="Achievements"
+          title="Milestones & Recognition"
+          desc="A milestone from my hackathon journey."
+        />
+
+        <div className="mx-auto mt-14 max-w-3xl">
+          <article className="glass group relative overflow-hidden rounded-3xl p-8 transition-all hover:-translate-y-1 sm:p-10">
+            <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-[oklch(0.6_0.25_260)] opacity-20 blur-3xl transition-opacity group-hover:opacity-40" />
+
+            <div className="relative flex flex-col gap-5 sm:flex-row sm:items-start">
+              <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]">
+                <Trophy className="h-7 w-7 text-white" />
+              </div>
+
+              <div className="min-w-0 flex-1">
+                <span className="inline-flex rounded-full border border-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  3rd Place
+                </span>
+
+                <h3 className="mt-4 font-display text-2xl font-bold sm:text-3xl">
+                  HackSprint Hackathon
+                </h3>
+
+                <p className="mt-2 text-sm text-muted-foreground">
+                  GTBIT · Team ByteForce
+                </p>
+
+                <p className="mt-4 leading-relaxed text-muted-foreground">
+                  Secured 3rd place at HackSprint, GTBIT, as part of
+                  Team ByteForce for developing GearLoop, a sports
+                  equipment-sharing platform.
+                </p>
+
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {["Hackathon", "Teamwork", "GearLoop"].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-muted-foreground"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Resume() {
   return (
     <section id="resume" className="relative py-28">
@@ -527,7 +602,7 @@ function Contact() {
             </span>
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/sauravkr-dev"
             target="_blank"
             rel="noreferrer"
             className="glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold hover:bg-white/10"
@@ -535,7 +610,7 @@ function Contact() {
             <Github className="h-4 w-4" /> GitHub
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://linkedin.com/in/sauravkr-dev"
             target="_blank"
             rel="noreferrer"
             className="glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold hover:bg-white/10"
@@ -592,6 +667,7 @@ function Portfolio() {
         <About />
         <Skills />
         <Projects />
+        <Achievements />
         <Resume />
         <Contact />
       </main>
