@@ -6,7 +6,6 @@ import {
   Mail,
   Download,
   ArrowRight,
-  Sparkles,
   Code2,
   Brain,
   Terminal,
@@ -105,9 +104,6 @@ function Nav() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#top" className="flex items-center gap-2">
-          <div className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)] shadow-[0_0_20px_oklch(0.7_0.22_270/0.6)]">
-            <Sparkles className="h-4 w-4 text-white" />
-          </div>
           <span className="font-display text-lg font-bold tracking-tight">Saurav<span className="text-gradient">.</span></span>
         </a>
 
@@ -129,10 +125,10 @@ function Nav() {
 
         <a
           href="#contact"
-          className="group relative hidden overflow-hidden rounded-full px-5 py-2 text-sm font-medium text-white sm:inline-flex"
+          className="group relative hidden overflow-hidden rounded-full px-5 py-2 text-sm font-medium text-black sm:inline-flex"
         >
-          <span className="absolute inset-0 bg-gradient-to-r from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)] animate-gradient" />
-          <span className="absolute inset-0 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-70 bg-gradient-to-r from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]" />
+          <span className="absolute inset-0 bg-gradient-to-r from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)] animate-gradient" />
+          <span className="absolute inset-0 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-70 bg-gradient-to-r from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]" />
           <span className="relative flex items-center gap-1.5">Hire Me <ArrowRight className="h-3.5 w-3.5" /></span>
         </a>
       </div>
@@ -144,8 +140,8 @@ function Hero() {
   return (
     <section id="top" className="relative flex min-h-screen items-center overflow-hidden pt-24">
       {/* Orbs */}
-      <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-[oklch(0.6_0.25_260)] opacity-30 blur-3xl animate-pulse-glow" />
-      <div className="pointer-events-none absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-[oklch(0.6_0.22_300)] opacity-30 blur-3xl animate-pulse-glow [animation-delay:1s]" />
+      <div className="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-[oklch(0.700_0.125_88)] opacity-30 blur-3xl animate-pulse-glow" />
+      <div className="pointer-events-none absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-[oklch(0.600_0.125_72)] opacity-30 blur-3xl animate-pulse-glow [animation-delay:1s]" />
 
       {/* Grid backdrop */}
       <div
@@ -162,8 +158,8 @@ function Hero() {
         <div>
           <div className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs text-muted-foreground">
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[oklch(0.7_0.2_240)] opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-[oklch(0.7_0.2_240)]" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[oklch(0.800_0.125_88)] opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-[oklch(0.800_0.125_88)]" />
             </span>
             Available for internships & collaborations
           </div>
@@ -183,10 +179,10 @@ function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="#contact"
-              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.02]"
+              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-[1.02]"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]" />
-              <span className="absolute inset-0 opacity-70 blur-xl bg-gradient-to-r from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]" />
+              <span className="absolute inset-0 bg-gradient-to-r from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]" />
+              <span className="absolute inset-0 opacity-70 blur-xl bg-gradient-to-r from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]" />
               <span className="relative flex items-center gap-2">
                 <Rocket className="h-4 w-4" /> Hire Me
               </span>
@@ -204,7 +200,7 @@ function Hero() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"
-                className="glass grid h-11 w-11 place-items-center rounded-full transition-all hover:scale-110 hover:text-[oklch(0.75_0.2_240)]"
+                className="glass grid h-11 w-11 place-items-center rounded-full transition-all hover:scale-110 hover:text-[oklch(0.850_0.125_88)]"
               >
                 <Github className="h-4 w-4" />
               </a>
@@ -213,7 +209,7 @@ function Hero() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
-                className="glass grid h-11 w-11 place-items-center rounded-full transition-all hover:scale-110 hover:text-[oklch(0.75_0.22_300)]"
+                className="glass grid h-11 w-11 place-items-center rounded-full transition-all hover:scale-110 hover:text-[oklch(0.750_0.125_72)]"
               >
                 <Linkedin className="h-4 w-4" />
               </a>
@@ -236,7 +232,7 @@ function Hero() {
 
         {/* Visual card */}
         <div className="relative mx-auto w-full max-w-md animate-float">
-          <div className="absolute -inset-2 rounded-3xl bg-gradient-to-br from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)] opacity-40 blur-2xl" />
+          <div className="absolute -inset-2 rounded-3xl bg-gradient-to-br from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)] opacity-40 blur-2xl" />
           <div className="glass relative overflow-hidden rounded-3xl p-6">
             <div className="flex items-center justify-between">
               <div className="flex gap-1.5">
@@ -255,17 +251,17 @@ nova = Assistant(
   model="gpt-neo-x",
 )
 
-`}<span className="text-[oklch(0.78_0.18_240)]">@nova.on_wake</span>{`
-`}<span className="text-[oklch(0.8_0.15_300)]">def</span>{` greet(user):
-  `}<span className="text-[oklch(0.85_0.15_190)]">return</span>{` f"Hi {user.name}, "\\
+`}<span className="text-[oklch(0.880_0.125_88)]">@nova.on_wake</span>{`
+`}<span className="text-[oklch(0.800_0.125_72)]">def</span>{` greet(user):
+  `}<span className="text-[oklch(0.930_0.125_88)]">return</span>{` f"Hi {user.name}, "\\
          "what shall we build today?"
 
-`}<span className="text-[oklch(0.8_0.15_300)]">nova.listen()</span>{`  # → 🎙️  live`}
+`}<span className="text-[oklch(0.800_0.125_72)]">nova.listen()</span>{`  # → 🎙️  live`}
             </pre>
             <div className="mt-5 flex items-center justify-between rounded-xl border border-white/5 bg-white/5 p-3">
               <div className="flex items-center gap-2">
-                <div className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]">
-                  <Brain className="h-4 w-4 text-white" />
+                <div className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]">
+                  <Brain className="h-4 w-4 text-black" />
                 </div>
                 <div>
                   <div className="text-xs font-semibold">Nova is listening…</div>
@@ -276,7 +272,7 @@ nova = Assistant(
                 {[6, 12, 8, 16, 10, 14, 7].map((h, i) => (
                   <span
                     key={i}
-                    className="w-1 rounded-full bg-gradient-to-t from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]"
+                    className="w-1 rounded-full bg-gradient-to-t from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]"
                     style={{ height: h, animation: `pulse-glow ${1 + i * 0.1}s ease-in-out infinite` }}
                   />
                 ))}
@@ -332,10 +328,10 @@ function About() {
               {[
                 { icon: GraduationCap, label: "B.Tech · CSE" },
                 { icon: MapPin, label: "Delhi-NCR · Hybrid/Remote" },
-                { icon: Sparkles, label: "AI & Software Engineer" },
+                { icon: Code2, label: "AI & Software Engineer" },
               ].map(({ icon: Icon, label }) => (
                 <div key={label} className="flex items-center gap-2 rounded-xl border border-white/5 bg-white/5 p-3 text-sm">
-                  <Icon className="h-4 w-4 text-[oklch(0.75_0.2_270)]" /> {label}
+                  <Icon className="h-4 w-4 text-[oklch(0.850_0.125_88)]" /> {label}
                 </div>
               ))}
             </div>
@@ -349,7 +345,7 @@ function About() {
                 { t: "Python craft", d: "APIs, tooling, automation" },
                 { t: "DSA", d: "Sharpening problem-solving daily" },
               ].map((f) => (
-                <li key={f.t} className="border-l-2 border-[oklch(0.7_0.2_275)] pl-4">
+                <li key={f.t} className="border-l-2 border-[oklch(0.800_0.125_88)] pl-4">
                   <div className="font-semibold">{f.t}</div>
                   <div className="text-sm text-muted-foreground">{f.d}</div>
                 </li>
@@ -374,10 +370,10 @@ function Skills() {
               key={name}
               className="glass group relative overflow-hidden rounded-2xl p-6 transition-all hover:-translate-y-1 hover:border-white/20"
             >
-              <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-gradient-to-br from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)] opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-30" />
+              <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-gradient-to-br from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)] opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-30" />
               <div className="relative flex items-center gap-3">
-                <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)] shadow-[0_0_20px_oklch(0.7_0.22_270/0.5)]">
-                  <Icon className="h-5 w-5 text-white" />
+                <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)] shadow-[0_0_20px_oklch(0.800_0.125_88/0.5)]">
+                  <Icon className="h-5 w-5 text-black" />
                 </div>
                 <div className="min-w-0">
                   <div className="font-display font-semibold">{name}</div>
@@ -387,7 +383,7 @@ function Skills() {
               </div>
               <div className="relative mt-5 h-1.5 overflow-hidden rounded-full bg-white/5">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]"
+                  className="h-full rounded-full bg-gradient-to-r from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]"
                   style={{ width: `${level}%` }}
                 />
               </div>
@@ -415,8 +411,8 @@ function Projects() {
             >
               {p.featured && (
                 <>
-                  <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[oklch(0.6_0.25_260)] opacity-30 blur-3xl" />
-                  <div className="absolute -left-20 -bottom-20 h-64 w-64 rounded-full bg-[oklch(0.6_0.25_300)] opacity-30 blur-3xl" />
+                  <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[oklch(0.700_0.125_88)] opacity-30 blur-3xl" />
+                  <div className="absolute -left-20 -bottom-20 h-64 w-64 rounded-full bg-[oklch(0.600_0.125_72)] opacity-30 blur-3xl" />
                 </>
               )}
               <div className="relative">
@@ -424,11 +420,11 @@ function Projects() {
                   <span
                     className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[10px] font-semibold uppercase tracking-widest ${
                       p.featured
-                        ? "bg-gradient-to-r from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)] text-white"
+                        ? "bg-gradient-to-r from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)] text-black"
                         : "border border-white/10 text-muted-foreground"
                     }`}
                   >
-                    {p.featured && <Sparkles className="h-3 w-3" />} {p.tag}
+                    {p.tag}
                   </span>
                   <span className="font-mono text-xs text-muted-foreground">0{i + 1}</span>
                 </div>
@@ -451,7 +447,7 @@ function Projects() {
                     href={p.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-[oklch(0.8_0.15_270)] transition-colors hover:text-white"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[oklch(0.900_0.125_88)] transition-colors hover:text-white"
                   >
                     View on GitHub <Github className="h-3.5 w-3.5" />
                   </a>
@@ -461,7 +457,7 @@ function Projects() {
                       href={p.live}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-[oklch(0.8_0.15_270)] transition-colors hover:text-white"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-[oklch(0.900_0.125_88)] transition-colors hover:text-white"
                     >
                       Live Demo <ExternalLink className="h-3.5 w-3.5" />
                     </a>
@@ -489,11 +485,11 @@ function Achievements() {
 
         <div className="mx-auto mt-14 max-w-3xl">
           <article className="glass group relative overflow-hidden rounded-3xl p-8 transition-all hover:-translate-y-1 sm:p-10">
-            <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-[oklch(0.6_0.25_260)] opacity-20 blur-3xl transition-opacity group-hover:opacity-40" />
+            <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-[oklch(0.700_0.125_88)] opacity-20 blur-3xl transition-opacity group-hover:opacity-40" />
 
             <div className="relative flex flex-col gap-5 sm:flex-row sm:items-start">
-              <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]">
-                <Trophy className="h-7 w-7 text-white" />
+              <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]">
+                <Trophy className="h-7 w-7 text-black" />
               </div>
 
               <div className="min-w-0 flex-1">
@@ -539,8 +535,8 @@ function Resume() {
     <section id="resume" className="relative py-28">
       <div className="mx-auto max-w-4xl px-4 sm:px-6">
         <div className="glass relative overflow-hidden rounded-3xl p-10 sm:p-14">
-          <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[oklch(0.6_0.25_260)] opacity-30 blur-3xl" />
-          <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[oklch(0.6_0.25_300)] opacity-30 blur-3xl" />
+          <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[oklch(0.700_0.125_88)] opacity-30 blur-3xl" />
+          <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[oklch(0.600_0.125_72)] opacity-30 blur-3xl" />
 
           <div className="relative grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
             <div>
@@ -558,10 +554,10 @@ function Resume() {
               <a
                 href="/resume.pdf"
                 download
-                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full px-6 py-3 text-sm font-semibold text-white"
+                className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full px-6 py-3 text-sm font-semibold text-black"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]" />
-                <span className="absolute inset-0 opacity-60 blur-xl bg-gradient-to-r from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]" />
+                <span className="absolute inset-0 bg-gradient-to-r from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]" />
+                <span className="absolute inset-0 opacity-60 blur-xl bg-gradient-to-r from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]" />
                 <span className="relative flex items-center gap-2">
                   <Download className="h-4 w-4" /> Download Resume
                 </span>
@@ -593,10 +589,10 @@ function Contact() {
             href="mailto:sauravkr.dev@gmail.com"
             target="_blank"
             rel="noreferrer"
-            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-6 py-3 text-sm font-semibold text-white"
+            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-6 py-3 text-sm font-semibold text-black"
           >
-            <span className="absolute inset-0 bg-gradient-to-r from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]" />
-            <span className="absolute inset-0 opacity-70 blur-xl bg-gradient-to-r from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]" />
+            <span className="absolute inset-0 bg-gradient-to-r from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]" />
+            <span className="absolute inset-0 opacity-70 blur-xl bg-gradient-to-r from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]" />
             <span className="relative flex items-center gap-2">
               <Mail className="h-4 w-4" /> Hire Me
             </span>
@@ -620,8 +616,8 @@ function Contact() {
         </div>
 
         <div className="glass mx-auto mt-14 flex max-w-lg items-center gap-3 rounded-2xl p-5 text-left">
-          <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]">
-            <MessageCircle className="h-5 w-5 text-white" />
+          <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-[oklch(0.820_0.125_88)] to-[oklch(0.680_0.125_72)]">
+            <MessageCircle className="h-5 w-5 text-black" />
           </div>
           <div className="min-w-0">
             <div className="text-xs text-muted-foreground">Reach me at</div>
@@ -638,18 +634,15 @@ function Footer() {
     <footer className="relative border-t border-white/5 py-10">
       <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 sm:px-6">
         <div className="flex min-w-0 items-center gap-2">
-          <div className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-gradient-to-br from-[oklch(0.72_0.2_240)] to-[oklch(0.68_0.25_300)]">
-            <Sparkles className="h-3.5 w-3.5 text-white" />
-          </div>
           <span className="truncate text-sm text-muted-foreground">
             © {new Date().getFullYear()} Saurav Kumar. Crafted with Python & love.
           </span>
         </div>
         <div className="flex shrink-0 items-center gap-2">
-          <a href="https://github.com/sauravkr-dev" target="_blank" rel="noreferrer" aria-label="GitHub" className="glass grid h-9 w-9 place-items-center rounded-full hover:text-[oklch(0.75_0.2_240)]">
+          <a href="https://github.com/sauravkr-dev" target="_blank" rel="noreferrer" aria-label="GitHub" className="glass grid h-9 w-9 place-items-center rounded-full hover:text-[oklch(0.850_0.125_88)]">
             <Github className="h-4 w-4" />
           </a>
-          <a href="https://www.linkedin.com/in/sauravkr-dev" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="glass grid h-9 w-9 place-items-center rounded-full hover:text-[oklch(0.75_0.22_300)]">
+          <a href="https://www.linkedin.com/in/sauravkr-dev" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="glass grid h-9 w-9 place-items-center rounded-full hover:text-[oklch(0.750_0.125_72)]">
             <Linkedin className="h-4 w-4" />
           </a>
         </div>
